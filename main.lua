@@ -1,15 +1,21 @@
 --// Wemb99NIGHTS - Clean Fixed Version //--
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
+-- Neon Theme
+Rayfield:LoadCustomTheme({
+    Name = "WembNeon",
+    Accent = Color3.fromRGB(255, 20, 147),     -- Neon Pink
+    Outline = Color3.fromRGB(0, 255, 255),     -- Neon Cyan
+    Background = Color3.fromRGB(12, 12, 20),
+    TextColor = Color3.fromRGB(255, 255, 255),
+    Topbar = Color3.fromRGB(25, 25, 40),
+})
+
 local Window = Rayfield:CreateWindow({
     Name = "Wemb99NIGHTS",
     LoadingTitle = "Wemb99NIGHTS",
     LoadingSubtitle = "by Wemb",
-    ConfigurationSaving = {
-        Enabled = true,
-        FolderName = "Wemb99NIGHTS",
-        FileName = "Settings"
-    }
+    ConfigurationSaving = { Enabled = true, FolderName = "Wemb99NIGHTS" }
 })
 
 -- Services
